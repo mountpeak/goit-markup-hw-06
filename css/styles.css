@@ -674,11 +674,10 @@ textarea {
 .form-field label {
   margin-bottom: 4px;
   font-size: 12px;
-line-height: 14px;
-color: #8E8F99;
+  line-height: 14px;
+  color: var(--customer-border);
 }
 .form-field textarea::placeholder {
- 
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.04em;
@@ -697,16 +696,18 @@ color: #8E8F99;
   display: flex;
   flex-direction: column;
   border-radius: 4px;
- 
 }
 .form-field:not(:last-child) {
   margin-bottom: 8px;
 }
-.comment{ padding: 8px 16px;}
+.comment {
+  padding: 8px 16px;
+}
 .form-label {
 }
 
-.checkbox-topic input[type="checkbox"]{}
+.checkbox-topic input[type="checkbox"] {
+}
 
 .form-message {
   width: 100%;
