@@ -425,6 +425,49 @@
             <use href="./images/icons.svg#icon-close-modal-black"></use>
           </svg>
         </button>
+        <form class="form">
+          <div class="form-field">
+            <p class="form-subtext">
+              Leave your contacts and we will call you back
+            </p>
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-input" name="name" id="name" />
+          </div>
+          <div class="form-field">
+            <label for="phone_number" class="form-label">Phone</label>
+            <input
+              type="tel"
+              class="form-input"
+              name="phone_number"
+              id="phone_number"
+            />
+          </div>
+          <div class="form-field">
+            <label for="mail" class="form-label">Email</label>
+            <input type="email" class="form-input" name="mail" id="mail" />
+          </div>
+          <div class="form-field">
+            <label for="comment">Comment</label>
+            <textarea class="comment"
+              name="comment"
+              id="comment"
+              placeholder="Text input"
+              rows="8"
+            ></textarea>
+          </div>
+          <div class="checkbox-topic">
+            <input type="checkbox" name="accept" id="accept" />
+            <label for="accept"
+              >I accept the terms and conditions of the
+              <a class="link-form" href=""
+                ><span>Privacy Policy</span></a
+              ></label
+            >
+          </div>
+          <div class="form-button-wrapper">
+            <button type="submit" class="form-btn">Send</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
