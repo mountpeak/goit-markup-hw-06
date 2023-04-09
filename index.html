@@ -457,7 +457,7 @@
             </svg>
           </div>
           <label for="comment" class="form-label">Comment</label>
-          <div class="form-field">
+          <div class="form-field-area">
             <textarea
               class="comment"
               name="comment"
@@ -466,18 +466,20 @@
             ></textarea>
           </div>
           <div class="checkbox-topic">
-            <input type="checkbox" name="accept" id="accept" />
-
-            <label for="accept">
-              <svg class="form-icon" width="16" height="16">
+            <label class="label-checkbox" for="accept">
+              <input
+                class="modal-form-check"
+                type="checkbox"
+                name="accept"
+                id="accept"
+              />
+              <svg class="form-icon-check" width="16" height="16">
                 <use href="./images/icons.svg#icon-checkbox"></use>
               </svg>
-              <input type="checkbox" name="accept" id="accept" />
               I accept the terms and conditions of the
-              <a class="link-form" href=""
-                ><span class="privacy-policy">Privacy Policy</span></a
-              ></label
-            >
+
+              <a class="link-form" href="">Privacy Policy</a>
+            </label>
           </div>
           <div class="form-btn-wrapper">
             <button type="submit" class="form-btn">Send</button>
