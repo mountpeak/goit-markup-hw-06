@@ -442,6 +442,10 @@ textarea {
 .box-one {
   margin-right: 120px;
 }
+.box-two {
+  margin-right: 80px;
+}
+
 /* =========================================Social media============================= */
 
 .foot-subtext {
@@ -484,7 +488,78 @@ textarea {
 .social-icon-link:is(:hover, :focus) {
   background-color: var(--hover-green);
 }
+/* =============================Subscribe===================== */
+.box-tree .form-footer {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  width: 453px;
+  height: 40px;
+}
+.form-footer .subscribe {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
 
+  width: 264px;
+  height: 100%;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--background-color-navy);
+}
+
+.form-btn-footer {
+position: relative;
+
+  min-width: 165px;
+  height: 40px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  background: var(--web-logo);
+  border: none;
+  border-radius: 4px;
+}
+.form-btn-footer-box {
+  position: relative;
+}
+.form-btn-footer {
+  display: flex;
+  margin: 0;
+  
+  padding: 8px 24px;
+  background: var(--button-iris);
+
+  transition-property: background-color, box-shadow;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.form-btn-footer:hover,
+.form-btn-footer:focus {
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.form-icon-footer{
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  display: inline-block;
+  fill: var(--white);
+
+  transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+}
 /* <!-- ==================Portfolio ==================--> */
 .page-works {
   padding-top: 96px;
@@ -758,19 +833,25 @@ textarea {
   position: absolute;
 }
 
-.form-icon-check {
+.label-checkbox::before {
   display: inline-block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  fill: var(--modal-btn-background);
   margin-right: 8px;
+  background-color: var(--modal-btn-background);
 }
-.modal-form-check:checked + .form-icon-check {
+.modal-form-check:checked + .label-checkbox::before {
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: var(--accent-color);
   background-color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-  
-
+  background-image: url(../images/check.svg);
 }
+
 .form-icon {
   position: absolute;
   top: 50%;
