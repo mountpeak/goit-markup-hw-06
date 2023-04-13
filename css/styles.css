@@ -846,19 +846,27 @@ textarea {
   appearance: none;
   position: absolute;
 }
-.label-checkbox {
+.link-form {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.label-checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  
 
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: var(--customer-border);
 }
-.label-checkbox::before {
-  display: inline-block;
-  content: "";
+
+.label-checkbox span {
+  display: flex;
+  align-items: center;
+ justify-content: center;
   width: 16px;
   height: 16px;
   cursor: pointer;
@@ -866,15 +874,18 @@ textarea {
   border-radius: 2px;
   margin-right: 8px;
   background-color: var(--modal-btn-background);
+  fill: transparent;
 }
-.modal-form-check:checked + .label-checkbox::before {
-  background-position: center;
-  background-repeat: no-repeat;
-  border-color: var(--accent-color);
+.modal-form-check:checked + .label-checkbox span {
   background-color: var(--accent-color);
-  background-image: url(../images/check.svg);
+  border: none;
+  fill: var(--cloud);
 }
+.modal-form-check:focus + .label-checkbox span {
+  border-color:var(--background-color-navy);
+} 
 
+/* ================================================ */
 .form-icon {
   position: absolute;
   top: 50%;
