@@ -23,7 +23,7 @@
 
 h1,
 h2,
-h3,
+h3, 
 h4,
 p {
   margin-top: 0;
@@ -49,7 +49,9 @@ button {
 }
 .list {
   list-style: none;
+  
 }
+
 body {
   font-family: var(--pimary-font);
   color: var(--primary-text-color);
@@ -58,7 +60,9 @@ body {
 textarea {
   resize: none;
 }
-
+.no-scroll {
+  overflow: hidden;
+}
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
