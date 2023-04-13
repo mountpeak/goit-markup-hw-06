@@ -489,6 +489,7 @@ textarea {
   background-color: var(--hover-green);
 }
 /* =============================Subscribe===================== */
+
 .box-tree .form-footer {
   display: flex;
   justify-content: center;
@@ -527,8 +528,6 @@ textarea {
   border-color: var(--button-iris);
 }
 .form-btn-footer {
-  position: relative;
-
   min-width: 165px;
   height: 40px;
   font-family: inherit;
@@ -855,7 +854,6 @@ textarea {
   position: relative;
   display: flex;
   align-items: center;
-  
 
   font-size: 12px;
   line-height: 1.33;
@@ -866,7 +864,7 @@ textarea {
 .label-checkbox span {
   display: flex;
   align-items: center;
- justify-content: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
   cursor: pointer;
@@ -882,8 +880,8 @@ textarea {
   fill: var(--cloud);
 }
 .modal-form-check:focus + .label-checkbox span {
-  border-color:var(--background-color-navy);
-} 
+  border-color: var(--background-color-navy);
+}
 
 /* ================================================ */
 .form-icon {
