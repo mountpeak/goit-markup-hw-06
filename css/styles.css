@@ -60,9 +60,7 @@ body {
 textarea {
   resize: none;
 }
-.no-scroll {
-  overflow: hidden;
-}
+
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
